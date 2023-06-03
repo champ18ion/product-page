@@ -118,13 +118,13 @@ export default function Payment() {
             Pay now
           </button>
           {isLoading && (
-            <div className="flex justify-center items-center my-12">
+            <div className="flex flex-col justify-center items-center my-12">
               <div className="w-12 h-12 bg-pink-400 rounded-full animate-bounce" />
               <p className=" text-lg text-gray-600 ml-4">Processing payment...</p>
             </div>
           )}
           {isPaymentSuccessful && (
-            <div className="flex justify-center items-center my-10">
+            <div className="flex flex-col justify-center items-center my-10">
               <FiCheckCircle className="text-green-500 mr-2 h-10 w-10" />
               <p className="text-green-500">Payment Successful</p>
             </div>
